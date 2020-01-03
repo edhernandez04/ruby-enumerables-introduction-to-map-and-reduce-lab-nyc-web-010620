@@ -52,8 +52,8 @@ end
 def reduce_to_all_true(source)
   index = 0
   while index < source.length
-    return false
     if source[index] === false
+      return false
       index += 1
     end
     return true
