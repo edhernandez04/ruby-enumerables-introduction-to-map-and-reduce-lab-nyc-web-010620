@@ -39,8 +39,7 @@ def map_to_square(source)
   array
 end
 
-def reduce_to_total(source, starting_point)
-  starting_point = total
+def reduce_to_total(source)
   total = 0
   index = 0
   while index < source.length
