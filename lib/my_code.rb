@@ -51,10 +51,9 @@ end
 
 def reduce_to_all_true(source)
   index = 0
-  while index < source.length
-    if source[index] === false
-      return false
-      index += 1
-    end
-    return true
+  while index < source.length do
+    return false if source[index] === false
+    index += 1
   end
+  return true
+end
