@@ -48,3 +48,13 @@ def reduce_to_total(source, starting_point = 0)
   end
   total
 end
+
+def reduce_to_all_true(source)
+  index = 0
+  while index < source.length
+    return false
+    if source[index] === false
+      index += 1
+    end
+    return true
+  end
