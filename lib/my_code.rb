@@ -8,3 +8,13 @@ def map_to_negativize(source)
   end
   array
 end
+
+def map_to_no_change(source)
+  array = []
+  index = 0
+  while index < source.length
+    array << source[index]
+    index += 1
+  end
+  array
+end
