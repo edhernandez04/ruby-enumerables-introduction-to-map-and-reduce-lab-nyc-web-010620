@@ -18,3 +18,13 @@ def map_to_no_change(source)
   end
   array
 end
+
+def map_to_double(source)
+  array = []
+  index = 0
+  while index < source.length
+    array << source[index] * 2
+    index += 1
+  end
+  array
+end
