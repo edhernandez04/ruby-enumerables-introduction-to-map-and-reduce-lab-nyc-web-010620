@@ -57,3 +57,12 @@ def reduce_to_all_true(source)
   end
   return true
 end
+
+def reduce_to_any_true(source)
+  index = 0
+  while index < source.length do
+    return true if source[index] === true
+    index += 1
+  end
+  return false
+end
